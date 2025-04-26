@@ -1,0 +1,327 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+main {
+  background-color: #263238;
+  width: 100%;
+}
+.home-bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-bg {
+  z-index: 0;
+  position: relative;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.c-top {
+  position: absolute;
+  top: 14%;
+  z-index: 4;
+  background-color: black;
+  border-radius: 5px 5px 0px 0px;
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -ms-border-radius: 5px 5px 0px 0px;
+  -o-border-radius: 5px 5px 0px 0px;
+}
+.b1 {
+  border: 3px solid rgb(109, 109, 109);
+  background-color: black;
+  border-radius: 100%;
+  width: 2px;
+  height: 2px;
+}
+.b2 {
+  border: 3px solid rgb(109, 109, 109);
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  width: 5px;
+  margin: 5px;
+  height: 5px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.c-top1 {
+  z-index: 2;
+  position: absolute;
+  left: 28%;
+  bottom: 30%;
+  width: 60px;
+  height: 100px;
+  background-color: #000000;
+  transform: perspective(600px) rotateX(30deg);
+}
+.c-top2 {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 42%;
+  background-color: #a3a3a3;
+  background: linear-gradient(to bottom, #646464, #858585);
+  transform: perspective(600px) rotateX(30deg);
+  -webkit-transform: perspective(600px) rotateX(30deg);
+  -moz-transform: perspective(600px) rotateX(30deg);
+  -ms-transform: perspective(600px) rotateX(30deg);
+  -o-transform: perspective(600px) rotateX(30deg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.c-top3 {
+  z-index: 2;
+  position: absolute;
+  right: 28%;
+  bottom: 30%;
+  width: 60px;
+  height: 100px;
+  background-color: #000000;
+  transform: perspective(600px) rotateX(30deg);
+}
+.cactus {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 32%;
+  right: 65%;
+}
+.cactus img {
+  width: 400px;
+  height: 300px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
+.coffe {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  right: 0;
+}
+.coffe img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+}
+/* bg1 */
+
+.content-bg1 {
+  margin-top: 20px;
+  z-index: 3;
+  width: 50%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.bg1-content {
+  width: 97%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+/* bg2 */
+
+.content-bg2 {
+  z-index: 3;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.338);
+  border: 1px solid #202020;
+  border-bottom: 7px solid #505050;
+  background-color: #202020;
+  transform: perspective(600px) rotateX(30deg);
+  -webkit-transform: perspective(600px) rotateX(30deg);
+  -moz-transform: perspective(600px) rotateX(30deg);
+  -ms-transform: perspective(600px) rotateX(30deg);
+  -o-transform: perspective(600px) rotateX(30deg);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.c-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 95%;
+}
+.b-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  flex-wrap: wrap;
+}
+#button {
+  cursor: pointer;
+  margin: 5px;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 35px;
+  color: #000000;
+  height: 35px;
+  transform: perspective(600px) rotateX(20deg);
+  box-shadow: 0 3px 10px #80deea;
+  border: 1px solid #80deea;
+  border-bottom: 3px solid #80deea;
+  -webkit-transform: perspective(600px) rotateX(20deg);
+  -moz-transform: perspective(600px) rotateX(20deg);
+  -ms-transform: perspective(600px) rotateX(20deg);
+  -o-transform: perspective(600px) rotateX(20deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+#button:hover {
+  box-shadow: 0 0 15px #80deea;
+  transform: perspective(600px) rotateX(20deg) scale(1.03);
+}
+
+#button:active {
+  transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  box-shadow: 0 0 10px #80deea;
+  -webkit-transform: perspective(600px) rotateX(20deg) scale(0.93)
+    translateY(2px);
+  -moz-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -ms-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -o-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+}
+.c-mid {
+  width: 15%;
+  height: 95%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.delete {
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  font-size: 12px;
+  width: 100%;
+  height: 35px;
+  color: #000000;
+  transform: perspective(600px) rotateX(20deg);
+  box-shadow: 0 3px 10px #80deea;
+  border: 1px solid #80deea;
+  border-bottom: 3px solid #80deea;
+  -webkit-transform: perspective(600px) rotateX(20deg);
+  -moz-transform: perspective(600px) rotateX(20deg);
+  -ms-transform: perspective(600px) rotateX(20deg);
+  -o-transform: perspective(600px) rotateX(20deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.delete:active {
+  transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  box-shadow: 0 1px 5px #4dd0e1;
+  -webkit-transform: perspective(600px) rotateX(20deg) scale(0.93)
+    translateY(2px);
+  -moz-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -ms-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -o-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+}
+.c-right {
+  width: 25%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button-3 {
+  background-color: #000000;
+  margin: 2px;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 30px;
+  width: 90px;
+  height: 30px;
+  transform: perspective(600px) rotateX(20deg);
+  box-shadow: 0 3px 10px #80deea;
+  border: 1px solid #80deea;
+  border-bottom: 3px solid #80deea;
+  -webkit-transform: perspective(600px) rotateX(20deg);
+  -moz-transform: perspective(600px) rotateX(20deg);
+  -ms-transform: perspective(600px) rotateX(20deg);
+  -o-transform: perspective(600px) rotateX(20deg);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.button-3:active {
+  transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  box-shadow: 0 1px 5px #4dd0e1;
+  -webkit-transform: perspective(600px) rotateX(20deg) scale(0.93)
+    translateY(2px);
+  -moz-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -ms-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+  -o-transform: perspective(600px) rotateX(20deg) scale(0.93) translateY(2px);
+}
