@@ -6,7 +6,6 @@ Website sederhana untuk mengonversi suhu antara Celsius (°C) dan Fahrenheit (°
 
 ![Tampilan Website](img/ss.png)
 
-
 ## 🚀 Fitur
 
 - Input suhu
@@ -27,3 +26,7 @@ Website sederhana untuk mengonversi suhu antara Celsius (°C) dan Fahrenheit (°
 2. Klik tombol **Konversi**
 3. Lihat hasil dan penjelasan rumus di bawahnya
 4. Gunakan tombol **Reset** atau **Reverse** sesuai kebutuhan
+
+## Link GitHub Pages
+
+Untuk melihat hasil project secara langsung, klik [di sini](https://revou-fundamental-course.github.io/21-apr-25-mahbubilgofur/).
