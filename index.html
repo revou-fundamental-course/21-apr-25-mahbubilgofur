@@ -3,46 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEBSITE KALKULATOR SUHU</title>
+  <title>MYProject | Kalkulator Suhu</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
   <header>
-
+    <div class="h-left">
+      <h1>MY<span>Project</span></h1>
+    </div>
+    <div class="h-right">
+       <nav>
+        <ul>
+          <li><a class="home-h" href="#Home">Home</a></li>
+          <li><a href="#Rumus">Rumus</a></li>
+          <li><a href="#Tentang">Tentang</a></li>
+        </ul>
+       </nav>
+    </div>
   </header>
   <main>
-    <section class="home-bg">
+    <section class="home-bg" id="Home">
       <div class="content-bg">
-        <div class="c-top2"></div>
+        <div class="c-top-pesan-K">
+          <div class="c-top-11"></div>
+          <div class="c-top-22"></div>
+          <p>Konversi <span>Celsius (°C)</span> ke <span>Fahrenheit (°F)</span></p>
+        </div>
+        <div class="c-top-pesan-N">
+          <p>~MahbubilGofur</p>
+        </div>
+        <div class="m-content-bg">
+          <div class="c-top-bottom"> 
+            <div class="c-mouse">
+            <li class="aa"></li>
+            <li class="a">@</li>
+            </div>
+          </div>
+          <div class="c-top1"></div>
+          <div class="c-top2"></div>
+        <div class="content-bg1-bg">
+            <div class="c-top">
+              <div class="b-1"></div>
+              <div class="b-2"></div>
+            </div>
+          <div class="content-bg1">
+          <div class="bg1-content">
+            <div class="layar-top"></div>
+            <div class="layar-mid">
+              <div class="input">
+                <label for="Masukkan Suhu">Input Suhu Anda:</label>
+                <input type="number" id="inputSuhu" required>
+                <!-- // -->
+                <label for="Hasil:">Hasil Konversi:</label>
+                <input type="text" id="outputSuhu" readonly>      
+                <!-- // -->
+                <label for="Cara Kalkulasi:">Penjelasan Perhitungan:</label>      
+                <textarea id="penjelasan" readonly></textarea>
+              </div>
+            </div>
+            <div class="layar-bottom">
+              <li class="li-a">
+                <ul class="li-aa"></ul>
+              </li>
+              <li class="li-b">
+                <ul class="li-bb b1"></ul>
+                <ul class="li-bb b2"></ul>
+                <ul class="li-bb b3"></ul>
+                <ul class="li-bb b4"></ul>
+                <ul class="li-bb b5"></ul>
+                <ul class="li-bb b6"></ul>
+              </li>
+              <li class="li-c">
+                <ul class="li-cc"></ul>
+                <ul class="li-cc"></ul>
+                <ul class="li-cc"></ul>
+                <ul class="li-cc"></ul>
+                <ul class="li-cc"></ul>
+                <ul class="li-cc"></ul>
+              </li>
+            </div>
+          </div>
+          </div>
+        </div>
         <div class="content-bg2">
           <div class="c-left">
             <div class="b-button">
-            <button id="button">1</button>
-            <button id="button">2</button>
-            <button id="button">3</button>
-            <button id="button">4</button>
-            <button id="button">5</button>
-            <button id="button">6</button>
-            <button id="button">7</button>
-            <button id="button">8</button>
-            <button id="button">9</button>
-            <button id="button">0</button>
+            <button id="button" onclick="TambahInput('1')">1</button>
+            <button id="button" onclick="TambahInput('2')">2</button>
+            <button id="button" onclick="TambahInput('3')">3</button>
+            <button id="button" onclick="TambahInput('4')">4</button>
+            <button id="button" onclick="TambahInput('5')">5</button>
+            <button id="button" onclick="TambahInput('6')">6</button>
+            <button id="button" onclick="TambahInput('7')">7</button>
+            <button id="button" onclick="TambahInput('8')">8</button>
+            <button id="button" onclick="TambahInput('9')">9</button>
+            <button id="button" onclick="TambahInput('0')">0</button>
             </div>
           </div>
           <div class="c-mid">
-            <button class="delete">backspace</button>
+            <button class="delete" onclick="HapusSatu()">
+              <p>
+                backspace
+              </p>
+              <p class="dlt">⌫
+              </p>
+            </button>
           </div>
           <div class="c-right">
-            <button class="button-3">Reset</button>
-            <button class="button-3">Konversi</button>
-            <button class="button-3">Reverse</button>        
+            <button class="button-3" id="Reset">Reset</button>
+            <button class="button-3" id="Konversi" style=" background-color: rgb(0, 251, 255); color: rgb(0, 0, 0);">Konversi</button>
+            <button class="button-3" id="Reverse">Reverse</button>        
           </div>
         </div>
+        </div>
+      </div>
+    </section>
+    <section class="rumus" id="Rumus">
+      <div class="f">
+        <div class="t-f">
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+        </div>
+        <div class="b-f">
+          <h3>Rumus Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h3>
+          <p class="fj">
+            Suhu S dalam derajat Fahrenheit (°F) dapat dihitung dengan mengalikan suhu S dalam derajat
+            Celsius (°C) dengan 9/5 lalu menambahkan 32.
+          </p>
+          <p><strong>Rumus:</strong></p>
+          <p class="bg-f">S(°F) = (S(°C) × 9/5) + 32</p>
+          <p>atau</p>
+          <p class="bg-f">S(°F) = (S(°C) × 1.8) + 32</p>
+        </div>
+      </div>
+      <div class="ff">
+        <div class="t-f">
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+        </div>
+        <div class="b-f">
+          <h3>Rumus Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h3>
+            <p class="fj">
+              Suhu S dalam derajat Celsius (°C) sama dengan suhu S dalam derajat Fahrenheit (°F)
+              dikurangi 32 lalu dikalikan 5/9.
+            </p>
+            <p><strong>Rumus:</strong></p>
+            <p class="bg-f">S(°C) = (S(°F) - 32) × 5/9</p>
+            <p>atau</p>
+            <p class="bg-f">S(°C) = (S(°F) - 32) × 0.5556</p>
+        </div>
+      </div>
+    </section>
+    <section class="tentang" id="Tentang">
+      <div class="tnt-bg">
+        <div class="tnt-l"></div>
+        <div class="tnt-r"></div>
+      <div class="t-bg-t">
+        <p>Tentang Kalkulator Suhu</p>
+      </div>
+      <div class="t-bg">
+        <p>Kalkulator Suhu ini memudahkan Anda untuk melakukan konversi Celsius dan Fahrenheit, dengan desain yang modern dan mudah digunakan.</p>
+      </div>
       </div>
     </section>
   </main>
   <footer>
-
+  <p>© 2025 Kalkulator Suhu. Dibuat oleh ~MahbubilGofur.</p>
   </footer>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </body>
 </html>
