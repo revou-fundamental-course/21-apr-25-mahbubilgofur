@@ -1,6 +1,6 @@
 # MYProject - Kalkulator Suhu
 
-Website sederhana untuk mengonversi suhu antara Celsius (°C) dan Fahrenheit (°F). Dibuat dengan HTML, CSS, dan JavaScript.
+Kalkulator Suhu ini memudahkan Anda untuk melakukan konversi Celsius (°C) dan Fahrenheit (°F), dengan desain yang modern dan mudah digunakan. Dibuat dengan HTML, CSS, dan JavaScript.
 
 ## 📸 Screenshot
 
