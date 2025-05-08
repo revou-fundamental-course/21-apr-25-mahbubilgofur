@@ -750,7 +750,7 @@
     font-size: 15px;
     border-radius: 8px;
     width: 40px;
-    color: #000000;
+    color: #ffffff;
     height: 40px;
     transform: none;
   }
@@ -897,7 +897,6 @@
     font-size: 15px;
     border-radius: 8px;
     width: 40px;
-    color: #000000;
     height: 40px;
     transform: none;
   }
@@ -921,7 +920,7 @@
     display: none;
   }
   .delete .dlt {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: block;
   }
   .c-right {
@@ -1047,7 +1046,6 @@
     font-size: 15px;
     border-radius: 8px;
     width: 30px;
-    color: #000000;
     height: 35px;
     transform: none;
     -webkit-border-radius: 8px;
@@ -1075,7 +1073,6 @@
     display: none;
   }
   .delete .dlt {
-    color: rgb(0, 0, 0);
     display: block;
   }
   .c-right {
@@ -1147,7 +1144,6 @@
     font-size: 15px;
     border-radius: 8px;
     width: 30px;
-    color: #000000;
     height: 35px;
     transform: none;
     -webkit-border-radius: 8px;
@@ -1177,7 +1173,6 @@
     display: none;
   }
   .delete .dlt {
-    color: rgb(0, 0, 0);
     display: block;
   }
   .c-right {
@@ -1229,7 +1224,6 @@
   }
   #button {
     width: 29px;
-    color: #000000;
     height: 35px;
   }
   /* /// */
